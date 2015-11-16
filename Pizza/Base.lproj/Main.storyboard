@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HJ4-O2-5Ve">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoB-XA-9LU">
+                                <rect key="frame" x="241" y="500" width="118" height="51"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="hMy-wl-9t0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="23"/>
+                                <state key="normal" title="Continuar"/>
+                                <connections>
+                                    <segue destination="FR3-WJ-yJV" kind="show" id="A05-Bz-VkZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guo-DK-VqG" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="231" y="411" width="138" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="naQ-rb-OiA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Grande"/>
+                                <connections>
+                                    <action selector="Grande:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mdq-dy-ATk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXh-1L-Itl" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="231" y="323" width="138" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fee-bd-CwR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Mediana"/>
+                                <connections>
+                                    <action selector="Mediana:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jc6-Ku-ZrA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erx-tG-lwg" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="231" y="237" width="138" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="DDy-aM-QT1"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZKg-08-bIQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Chica"/>
+                                <connections>
+                                    <action selector="Chica:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Ta-iM-BiF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamaño de la Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fps-tS-zHV">
+                                <rect key="frame" x="197" y="135" width="206" height="27"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="qbc-o9-m3f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="erx-tG-lwg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="15U-lZ-KiA"/>
+                            <constraint firstItem="Guo-DK-VqG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1dX-Ug-MLe"/>
+                            <constraint firstItem="erx-tG-lwg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4VS-fS-3lm"/>
+                            <constraint firstItem="GXh-1L-Itl" firstAttribute="top" secondItem="erx-tG-lwg" secondAttribute="bottom" constant="56" id="6k6-oa-9dd"/>
+                            <constraint firstItem="erx-tG-lwg" firstAttribute="top" secondItem="fps-tS-zHV" secondAttribute="bottom" constant="75" id="A9l-Dd-e1P"/>
+                            <constraint firstItem="GXh-1L-Itl" firstAttribute="leading" secondItem="erx-tG-lwg" secondAttribute="leading" id="Bj3-Vg-Gjo"/>
+                            <constraint firstItem="Guo-DK-VqG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ggr-on-bsW"/>
+                            <constraint firstItem="Guo-DK-VqG" firstAttribute="top" secondItem="GXh-1L-Itl" secondAttribute="bottom" constant="58" id="JuF-WM-evl"/>
+                            <constraint firstItem="GXh-1L-Itl" firstAttribute="leading" secondItem="Guo-DK-VqG" secondAttribute="leading" id="MjQ-fj-xTh"/>
+                            <constraint firstItem="GXh-1L-Itl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OSH-o5-Kof"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qoB-XA-9LU" secondAttribute="bottom" constant="49" id="PGw-dI-jhY"/>
+                            <constraint firstItem="fps-tS-zHV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="QjT-HY-luV"/>
+                            <constraint firstItem="qoB-XA-9LU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z0H-24-ent"/>
+                            <constraint firstItem="erx-tG-lwg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="173" id="dzM-tS-EwI"/>
+                            <constraint firstItem="GXh-1L-Itl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qBf-Gb-s8h"/>
+                            <constraint firstItem="fps-tS-zHV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ufJ-PH-Wq4"/>
+                            <constraint firstItem="qoB-XA-9LU" firstAttribute="top" secondItem="Guo-DK-VqG" secondAttribute="bottom" constant="59" id="veO-hL-tk9"/>
+                            <constraint firstItem="qoB-XA-9LU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yRd-n5-Igh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Naf-3F-aIX"/>
+                    <connections>
+                        <outlet property="Chica" destination="erx-tG-lwg" id="leT-X3-qxR"/>
+                        <outlet property="Grande" destination="Guo-DK-VqG" id="D8H-9n-XRO"/>
+                        <outlet property="Mediana" destination="GXh-1L-Itl" id="pEW-oS-Pji"/>
+                        <outlet property="chica" destination="erx-tG-lwg" id="Fmy-lR-V29"/>
+                        <outlet property="grande" destination="Guo-DK-VqG" id="z6x-Xs-Bpn"/>
+                        <outlet property="mediana" destination="GXh-1L-Itl" id="Stc-pA-p8h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="366"/>
+        </scene>
+        <!--Vista Resultado-->
+        <scene sceneID="g7N-Z4-Kwm">
+            <objects>
+                <viewController id="FR3-WJ-yJV" customClass="VistaResultado" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NhT-hf-0XN"/>
+                        <viewControllerLayoutGuide type="bottom" id="B65-lE-58k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9pG-gw-A4g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XA8-kh-GZg">
+                                <rect key="frame" x="241" y="491" width="118" height="51"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="bHX-fx-2p6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="23"/>
+                                <state key="normal" title="Continuar"/>
+                                <connections>
+                                    <segue destination="g49-2d-LXV" kind="show" id="Ggh-zc-K5I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tV-Al-b90" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="231" y="399" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="EYB-OT-WQS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Gruesa"/>
+                                <connections>
+                                    <action selector="gruesa:" destination="FR3-WJ-yJV" eventType="touchUpInside" id="Vyh-PT-GxO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofF-gd-W1l" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="231" y="311" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="9XA-Hy-u9Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Crujiente"/>
+                                <connections>
+                                    <action selector="crujiente:" destination="FR3-WJ-yJV" eventType="touchUpInside" id="QVf-5L-2e3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Act-c6-OUP" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="231" y="225" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="WgF-30-Oxg"/>
+                                    <constraint firstAttribute="width" constant="138" id="oJl-uZ-RFI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Delgada"/>
+                                <connections>
+                                    <action selector="delgada:" destination="FR3-WJ-yJV" eventType="touchUpInside" id="Aug-Gh-2Oj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Masa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKk-P3-UYQ">
+                                <rect key="frame" x="197" y="126" width="206" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="Ub1-aF-l4g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Act-c6-OUP" firstAttribute="top" secondItem="EKk-P3-UYQ" secondAttribute="bottom" constant="70" id="3St-MZ-Agw"/>
+                            <constraint firstItem="1tV-Al-b90" firstAttribute="centerX" secondItem="9pG-gw-A4g" secondAttribute="centerX" id="4PF-pQ-pST"/>
+                            <constraint firstItem="B65-lE-58k" firstAttribute="top" secondItem="XA8-kh-GZg" secondAttribute="bottom" constant="58" id="5GE-G4-sHo"/>
+                            <constraint firstItem="EKk-P3-UYQ" firstAttribute="centerX" secondItem="9pG-gw-A4g" secondAttribute="centerX" id="7L4-mj-W29"/>
+                            <constraint firstItem="ofF-gd-W1l" firstAttribute="leading" secondItem="1tV-Al-b90" secondAttribute="leading" id="8OL-4k-MbF"/>
+                            <constraint firstItem="Act-c6-OUP" firstAttribute="centerX" secondItem="9pG-gw-A4g" secondAttribute="centerX" id="8eA-VD-JYY"/>
+                            <constraint firstItem="EKk-P3-UYQ" firstAttribute="top" secondItem="NhT-hf-0XN" secondAttribute="bottom" constant="62" id="V7F-a0-roy"/>
+                            <constraint firstItem="1tV-Al-b90" firstAttribute="top" secondItem="ofF-gd-W1l" secondAttribute="bottom" constant="53" id="ZrX-jt-PeR"/>
+                            <constraint firstItem="ofF-gd-W1l" firstAttribute="top" secondItem="Act-c6-OUP" secondAttribute="bottom" constant="51" id="eFQ-Sd-xLg"/>
+                            <constraint firstItem="ofF-gd-W1l" firstAttribute="centerX" secondItem="9pG-gw-A4g" secondAttribute="centerX" id="fU9-NH-jWM"/>
+                            <constraint firstItem="XA8-kh-GZg" firstAttribute="centerX" secondItem="9pG-gw-A4g" secondAttribute="centerX" id="hOl-pV-Vyo"/>
+                            <constraint firstItem="ofF-gd-W1l" firstAttribute="leading" secondItem="Act-c6-OUP" secondAttribute="leading" id="nyw-Cd-zHl"/>
+                            <constraint firstItem="XA8-kh-GZg" firstAttribute="top" secondItem="1tV-Al-b90" secondAttribute="bottom" constant="57" id="v0B-er-xe7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Crujiente" destination="ofF-gd-W1l" id="NMc-IE-xjF"/>
+                        <outlet property="Delgada" destination="Act-c6-OUP" id="z7I-LV-R0M"/>
+                        <outlet property="Gruesa" destination="1tV-Al-b90" id="CrS-vD-Byr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RPB-nk-qTw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929" y="366"/>
+        </scene>
+        <!--Vista Resultado-->
+        <scene sceneID="FMS-gh-UEJ">
+            <objects>
+                <viewController id="g49-2d-LXV" customClass="VistaResultado" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fid-sz-dbO"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Ok-g7-jII"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Jp-qE-uBM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9k-AW-3cc">
+                                <rect key="frame" x="241" y="518" width="118" height="51"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="xPz-dX-VpR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="23"/>
+                                <state key="normal" title="Continuar"/>
+                                <connections>
+                                    <segue destination="C7k-Xn-ROC" kind="show" id="7bD-6o-JrB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="po6-Zp-4GB" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="231" y="291" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="iKE-q0-AcC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Cheddar"/>
+                                <connections>
+                                    <action selector="Ched:" destination="g49-2d-LXV" eventType="touchUpInside" id="qTJ-La-umW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXw-Hx-6cs" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="231" y="209" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Sya-Q0-O3X"/>
+                                    <constraint firstAttribute="width" constant="138" id="auF-lr-fcD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Mozarela"/>
+                                <connections>
+                                    <action selector="Moz:" destination="g49-2d-LXV" eventType="touchUpInside" id="FlM-uV-XgF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQa-Cs-eRT" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="231" y="449" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="4j2-JD-Jjg"/>
+                                    <constraint firstAttribute="width" constant="138" id="if8-77-gjD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Sin Queso"/>
+                                <connections>
+                                    <action selector="Sin:" destination="g49-2d-LXV" eventType="touchUpInside" id="Ue2-Tu-xEI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de Queso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frv-rd-2lY">
+                                <rect key="frame" x="224" y="113" width="153" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="153" id="fvZ-VM-w6G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ai0-eP-WTD" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="231" y="373" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="D6E-GW-tYG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Parmezano"/>
+                                <connections>
+                                    <action selector="Parm:" destination="g49-2d-LXV" eventType="touchUpInside" id="veN-qi-QIz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="po6-Zp-4GB" firstAttribute="leading" secondItem="iXw-Hx-6cs" secondAttribute="leading" id="4mf-eO-Ek2"/>
+                            <constraint firstItem="ai0-eP-WTD" firstAttribute="centerX" secondItem="5Jp-qE-uBM" secondAttribute="centerX" id="5WB-Zj-sMm"/>
+                            <constraint firstItem="F9k-AW-3cc" firstAttribute="centerX" secondItem="5Jp-qE-uBM" secondAttribute="centerX" id="Dex-f3-4J6"/>
+                            <constraint firstItem="Frv-rd-2lY" firstAttribute="top" secondItem="fid-sz-dbO" secondAttribute="bottom" constant="49" id="JFc-y5-rUN"/>
+                            <constraint firstItem="F9k-AW-3cc" firstAttribute="top" secondItem="ai0-eP-WTD" secondAttribute="bottom" constant="110" id="PfN-7B-0uJ"/>
+                            <constraint firstItem="po6-Zp-4GB" firstAttribute="centerX" secondItem="5Jp-qE-uBM" secondAttribute="centerX" id="U6E-rq-4XE"/>
+                            <constraint firstItem="F9k-AW-3cc" firstAttribute="top" secondItem="mQa-Cs-eRT" secondAttribute="bottom" constant="34" id="W6B-Tb-xmI"/>
+                            <constraint firstItem="po6-Zp-4GB" firstAttribute="leading" secondItem="ai0-eP-WTD" secondAttribute="leading" id="XEu-dz-8bs"/>
+                            <constraint firstItem="po6-Zp-4GB" firstAttribute="top" secondItem="iXw-Hx-6cs" secondAttribute="bottom" constant="47" id="d01-cB-UZL"/>
+                            <constraint firstItem="iXw-Hx-6cs" firstAttribute="centerX" secondItem="5Jp-qE-uBM" secondAttribute="centerX" id="k6G-nF-M4F"/>
+                            <constraint firstItem="iXw-Hx-6cs" firstAttribute="top" secondItem="Frv-rd-2lY" secondAttribute="bottom" constant="67" id="ow8-WC-mHa"/>
+                            <constraint firstItem="ai0-eP-WTD" firstAttribute="top" secondItem="po6-Zp-4GB" secondAttribute="bottom" constant="47" id="pX9-ka-lMa"/>
+                            <constraint firstItem="0Ok-g7-jII" firstAttribute="top" secondItem="F9k-AW-3cc" secondAttribute="bottom" constant="31" id="qKF-et-Lh7"/>
+                            <constraint firstItem="Frv-rd-2lY" firstAttribute="centerX" secondItem="5Jp-qE-uBM" secondAttribute="centerX" id="qYx-ue-xGD"/>
+                            <constraint firstItem="mQa-Cs-eRT" firstAttribute="centerX" secondItem="5Jp-qE-uBM" secondAttribute="centerX" id="wEV-rT-pol"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ched" destination="po6-Zp-4GB" id="QXO-an-p3a"/>
+                        <outlet property="moz" destination="iXw-Hx-6cs" id="nJ2-uo-bkq"/>
+                        <outlet property="parm" destination="ai0-eP-WTD" id="usx-vj-MAC"/>
+                        <outlet property="sin" destination="mQa-Cs-eRT" id="5Dp-6D-zq2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHW-Ps-6De" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sg3-uU-YDO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HJ4-O2-5Ve" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yw5-OH-Csh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gbW-oc-6ty"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8WY-iI-HJE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="546" y="366"/>
+        </scene>
+        <!--Vista Resultado-->
+        <scene sceneID="5sU-H4-iIx">
+            <objects>
+                <viewController id="C7k-Xn-ROC" customClass="VistaResultado" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tWU-wE-dF5"/>
+                        <viewControllerLayoutGuide type="bottom" id="O7S-2U-OGT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W4I-jj-jnm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHW-CB-cPc">
+                                <rect key="frame" x="241" y="503" width="118" height="51"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="UhV-QR-lmL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="23"/>
+                                <state key="normal" title="Continuar"/>
+                                <connections>
+                                    <segue destination="bRp-mB-WBv" kind="show" id="4Ac-OY-dhQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktH-ql-aRk" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="129" y="306" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Sdx-PN-dUw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Pavo"/>
+                                <connections>
+                                    <action selector="Pav:" destination="C7k-Xn-ROC" eventType="touchUpInside" id="hnb-Oo-0Rg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFB-Lo-nEd" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="129" y="238" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="9hR-wX-1lZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Pepperoni"/>
+                                <connections>
+                                    <action selector="Pep:" destination="C7k-Xn-ROC" eventType="touchUpInside" id="FaW-a3-rNl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lma-sf-zw0" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="129" y="168" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="2Pe-nF-JPL"/>
+                                    <constraint firstAttribute="height" constant="35" id="iPN-U1-Dxc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Jamon"/>
+                                <connections>
+                                    <action selector="Jam:" destination="C7k-Xn-ROC" eventType="touchUpInside" id="1j9-fV-nrw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzb-9q-54k" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="129" y="376" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="EjR-Pd-0EB"/>
+                                    <constraint firstAttribute="width" constant="138" id="cJj-lv-dgQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Salchicha"/>
+                                <connections>
+                                    <action selector="Sal:" destination="C7k-Xn-ROC" eventType="touchUpInside" id="LWz-nb-qoZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsK-XG-VJo" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="129" y="444" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="Ovh-yD-nfc"/>
+                                    <constraint firstAttribute="height" constant="35" id="xMa-rO-AbK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Aceituna"/>
+                                <connections>
+                                    <action selector="Ace:" destination="C7k-Xn-ROC" eventType="touchUpInside" id="5VF-9k-Vz5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredientes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbM-ew-a1R">
+                                <rect key="frame" x="247" y="98" width="130" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="ajA-mM-GUe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MF-jF-DyU" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="354" y="306" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="pr8-Ni-78l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Piña"/>
+                                <connections>
+                                    <action selector="Piñ:" destination="C7k-Xn-ROC" eventType="touchUpInside" id="XJW-ls-rbl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kw9-d5-vT0" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="354" y="238" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="xx8-3F-WXH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Pimiento"/>
+                                <connections>
+                                    <action selector="Pim:" destination="C7k-Xn-ROC" eventType="touchUpInside" id="uGa-s2-3i8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxh-e4-o8K" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="354" y="168" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="09N-xw-8tW"/>
+                                    <constraint firstAttribute="width" constant="138" id="8TO-2C-Uq1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Cebolla"/>
+                                <connections>
+                                    <action selector="Ceb:" destination="C7k-Xn-ROC" eventType="touchUpInside" id="csO-rN-94y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khM-n6-hu8" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="354" y="376" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="d8n-oe-Vir"/>
+                                    <constraint firstAttribute="width" constant="138" id="hcY-zZ-I3T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Anchoa"/>
+                                <connections>
+                                    <action selector="Anc:" destination="C7k-Xn-ROC" eventType="touchUpInside" id="XSJ-HI-F8Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16o-fx-26M" customClass="checkButton" customModule="Pizza" customModuleProvider="target">
+                                <rect key="frame" x="354" y="444" width="138" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="dHt-3S-oqv"/>
+                                    <constraint firstAttribute="width" constant="138" id="t38-E6-Tby"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <state key="normal" title="Chorizo"/>
+                                <connections>
+                                    <action selector="Cho:" destination="C7k-Xn-ROC" eventType="touchUpInside" id="NJP-62-bGH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O7S-2U-OGT" firstAttribute="top" secondItem="mHW-CB-cPc" secondAttribute="bottom" constant="46" id="0DS-f4-jHb"/>
+                            <constraint firstItem="SFB-Lo-nEd" firstAttribute="centerX" secondItem="W4I-jj-jnm" secondAttribute="centerX" constant="-102" id="7pZ-ad-sG7"/>
+                            <constraint firstItem="mHW-CB-cPc" firstAttribute="top" secondItem="hsK-XG-VJo" secondAttribute="bottom" constant="24" id="7wA-5g-rBa"/>
+                            <constraint firstItem="ktH-ql-aRk" firstAttribute="top" secondItem="SFB-Lo-nEd" secondAttribute="bottom" constant="33" id="8je-of-5QY"/>
+                            <constraint firstItem="XbM-ew-a1R" firstAttribute="top" secondItem="tWU-wE-dF5" secondAttribute="bottom" constant="34" id="9v5-gg-pdS"/>
+                            <constraint firstItem="SFB-Lo-nEd" firstAttribute="leading" secondItem="lma-sf-zw0" secondAttribute="leading" id="AZh-Su-ly7"/>
+                            <constraint firstItem="hsK-XG-VJo" firstAttribute="baseline" secondItem="16o-fx-26M" secondAttribute="baseline" id="CfW-Bf-N2Y"/>
+                            <constraint firstItem="hsK-XG-VJo" firstAttribute="centerX" secondItem="W4I-jj-jnm" secondAttribute="centerX" constant="-102" id="K4O-oK-mvr"/>
+                            <constraint firstItem="khM-n6-hu8" firstAttribute="centerX" secondItem="W4I-jj-jnm" secondAttribute="centerX" constant="123" id="KFz-KN-TaA"/>
+                            <constraint firstItem="kw9-d5-vT0" firstAttribute="leading" secondItem="kxh-e4-o8K" secondAttribute="leading" id="Lbd-ev-Njp"/>
+                            <constraint firstItem="6MF-jF-DyU" firstAttribute="centerX" secondItem="W4I-jj-jnm" secondAttribute="centerX" constant="123" id="QVZ-VI-A9S"/>
+                            <constraint firstItem="SFB-Lo-nEd" firstAttribute="leading" secondItem="ktH-ql-aRk" secondAttribute="leading" id="Rau-bC-yOM"/>
+                            <constraint firstItem="khM-n6-hu8" firstAttribute="baseline" secondItem="dzb-9q-54k" secondAttribute="baseline" id="Tjq-UO-DlZ"/>
+                            <constraint firstItem="lma-sf-zw0" firstAttribute="centerX" secondItem="W4I-jj-jnm" secondAttribute="centerX" constant="-102" id="W7B-Hs-L52"/>
+                            <constraint firstItem="kw9-d5-vT0" firstAttribute="leading" secondItem="6MF-jF-DyU" secondAttribute="leading" id="WR6-WQ-uQw"/>
+                            <constraint firstItem="XbM-ew-a1R" firstAttribute="centerX" secondItem="W4I-jj-jnm" secondAttribute="centerX" constant="12" id="X0o-KM-CWI"/>
+                            <constraint firstItem="dzb-9q-54k" firstAttribute="centerX" secondItem="W4I-jj-jnm" secondAttribute="centerX" constant="-102" id="YXm-mD-2JV"/>
+                            <constraint firstItem="lma-sf-zw0" firstAttribute="baseline" secondItem="kxh-e4-o8K" secondAttribute="baseline" id="Z3I-7J-V8f"/>
+                            <constraint firstItem="kw9-d5-vT0" firstAttribute="centerX" secondItem="W4I-jj-jnm" secondAttribute="centerX" constant="123" id="eM9-9z-koF"/>
+                            <constraint firstItem="kxh-e4-o8K" firstAttribute="centerX" secondItem="W4I-jj-jnm" secondAttribute="centerX" constant="123" id="icH-wB-fqB"/>
+                            <constraint firstItem="SFB-Lo-nEd" firstAttribute="top" secondItem="lma-sf-zw0" secondAttribute="bottom" constant="35" id="jrA-Q4-YqA"/>
+                            <constraint firstItem="16o-fx-26M" firstAttribute="centerX" secondItem="W4I-jj-jnm" secondAttribute="centerX" constant="123" id="ogb-QO-zaq"/>
+                            <constraint firstItem="mHW-CB-cPc" firstAttribute="centerX" secondItem="W4I-jj-jnm" secondAttribute="centerX" id="p3a-ra-pCh"/>
+                            <constraint firstItem="6MF-jF-DyU" firstAttribute="top" secondItem="kw9-d5-vT0" secondAttribute="bottom" constant="33" id="s3g-Rg-pzm"/>
+                            <constraint firstItem="lma-sf-zw0" firstAttribute="top" secondItem="XbM-ew-a1R" secondAttribute="bottom" constant="41" id="umX-DO-Al1"/>
+                            <constraint firstItem="kw9-d5-vT0" firstAttribute="top" secondItem="kxh-e4-o8K" secondAttribute="bottom" constant="35" id="v3G-Ad-nSf"/>
+                            <constraint firstItem="mHW-CB-cPc" firstAttribute="top" secondItem="ktH-ql-aRk" secondAttribute="bottom" constant="162" id="vhU-6D-5nu"/>
+                            <constraint firstItem="mHW-CB-cPc" firstAttribute="top" secondItem="dzb-9q-54k" secondAttribute="bottom" constant="92" id="vsF-OZ-7es"/>
+                            <constraint firstItem="ktH-ql-aRk" firstAttribute="centerX" secondItem="W4I-jj-jnm" secondAttribute="centerX" constant="-102" id="wja-4n-0Qg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ace" destination="hsK-XG-VJo" id="9ES-Xe-b8r"/>
+                        <outlet property="anc" destination="khM-n6-hu8" id="k3g-GX-Sra"/>
+                        <outlet property="ceb" destination="kxh-e4-o8K" id="9TR-ce-sSQ"/>
+                        <outlet property="cho" destination="16o-fx-26M" id="dfV-uQ-z4C"/>
+                        <outlet property="jam" destination="lma-sf-zw0" id="48F-Hf-kmc"/>
+                        <outlet property="pav" destination="ktH-ql-aRk" id="6CL-FN-RLw"/>
+                        <outlet property="pep" destination="SFB-Lo-nEd" id="PB4-gQ-OAL"/>
+                        <outlet property="pim" destination="kw9-d5-vT0" id="raF-GK-K9r"/>
+                        <outlet property="piñ" destination="6MF-jF-DyU" id="OcH-Ut-V4t"/>
+                        <outlet property="sal" destination="dzb-9q-54k" id="lgG-6L-Wyr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0a6-KS-dBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3296" y="366"/>
+        </scene>
+        <!--Vista Resultado2-->
+        <scene sceneID="EHx-zS-jLZ">
+            <objects>
+                <viewController id="bRp-mB-WBv" customClass="VistaResultado2" customModule="Pizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Akc-4l-8EQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="RKD-cC-sg2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ha5-V2-8h0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmación" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kp-ch-iFs">
+                                <rect key="frame" x="229" y="113" width="142" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="VgY-dA-hte"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tamaño de la Pizza:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7G-zq-Wjo">
+                                <rect key="frame" x="116" y="200" width="207" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="3yN-se-vbe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tipo de Queso:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrF-ec-1XI">
+                                <rect key="frame" x="116" y="325" width="159" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="QDm-FT-Yrn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tipo de Masa:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBH-Q2-wa9">
+                                <rect key="frame" x="116" y="263" width="148" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="zCq-XW-BG5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ingredientes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbG-lT-fKc">
+                                <rect key="frame" x="116" y="387" width="136" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="7fp-59-CZj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugS-CR-2iF">
+                                <rect key="frame" x="346" y="200" width="179" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179" id="oRm-Bt-bDL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1C-6A-RVZ">
+                                <rect key="frame" x="346" y="263" width="179" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179" id="68d-fR-iFo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gj2-aA-X2j">
+                                <rect key="frame" x="346" y="325" width="179" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179" id="FQ7-2f-lIo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l9-Wh-dCV">
+                                <rect key="frame" x="346" y="387" width="179" height="29"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="179" id="swf-Ob-biy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7kp-ch-iFs" firstAttribute="top" secondItem="Akc-4l-8EQ" secondAttribute="bottom" constant="49" id="1T6-C1-eHW"/>
+                            <constraint firstItem="sBH-Q2-wa9" firstAttribute="baseline" secondItem="W1C-6A-RVZ" secondAttribute="baseline" id="20H-y5-rK4"/>
+                            <constraint firstItem="L7G-zq-Wjo" firstAttribute="centerX" secondItem="Ha5-V2-8h0" secondAttribute="centerX" constant="-80.5" id="2M5-Gt-ONO"/>
+                            <constraint firstItem="NrF-ec-1XI" firstAttribute="centerX" secondItem="Ha5-V2-8h0" secondAttribute="centerX" constant="-104.5" id="6Rc-WO-cdd"/>
+                            <constraint firstItem="sBH-Q2-wa9" firstAttribute="top" secondItem="L7G-zq-Wjo" secondAttribute="bottom" constant="34" id="Fzw-Dx-liE"/>
+                            <constraint firstItem="Gj2-aA-X2j" firstAttribute="baseline" secondItem="NrF-ec-1XI" secondAttribute="baseline" id="JL7-Mg-37A"/>
+                            <constraint firstItem="sBH-Q2-wa9" firstAttribute="centerX" secondItem="Ha5-V2-8h0" secondAttribute="centerX" constant="-110" id="Q9D-mv-EOF"/>
+                            <constraint firstItem="DbG-lT-fKc" firstAttribute="baseline" secondItem="4l9-Wh-dCV" secondAttribute="baseline" id="RLA-0s-5bm"/>
+                            <constraint firstItem="7kp-ch-iFs" firstAttribute="centerX" secondItem="Ha5-V2-8h0" secondAttribute="centerX" id="TSW-7j-RkW"/>
+                            <constraint firstItem="4l9-Wh-dCV" firstAttribute="centerX" secondItem="Ha5-V2-8h0" secondAttribute="centerX" constant="135.5" id="YHE-0U-b09"/>
+                            <constraint firstItem="Gj2-aA-X2j" firstAttribute="centerX" secondItem="Ha5-V2-8h0" secondAttribute="centerX" constant="135.5" id="YbD-vf-1JS"/>
+                            <constraint firstItem="DbG-lT-fKc" firstAttribute="centerX" secondItem="Ha5-V2-8h0" secondAttribute="centerX" constant="-116" id="eEW-5v-aqj"/>
+                            <constraint firstItem="ugS-CR-2iF" firstAttribute="centerX" secondItem="Ha5-V2-8h0" secondAttribute="centerX" constant="135.5" id="gfa-aI-eak"/>
+                            <constraint firstItem="W1C-6A-RVZ" firstAttribute="centerX" secondItem="Ha5-V2-8h0" secondAttribute="centerX" constant="135.5" id="oiy-Rp-I5a"/>
+                            <constraint firstItem="L7G-zq-Wjo" firstAttribute="baseline" secondItem="ugS-CR-2iF" secondAttribute="baseline" id="tKo-Jj-rbj"/>
+                            <constraint firstItem="DbG-lT-fKc" firstAttribute="top" secondItem="NrF-ec-1XI" secondAttribute="bottom" constant="33" id="wbv-Ia-Cdr"/>
+                            <constraint firstItem="NrF-ec-1XI" firstAttribute="top" secondItem="sBH-Q2-wa9" secondAttribute="bottom" constant="33" id="xLe-rl-Xo9"/>
+                            <constraint firstItem="L7G-zq-Wjo" firstAttribute="top" secondItem="7kp-ch-iFs" secondAttribute="bottom" constant="58" id="xT5-s2-z5s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Tam" destination="ugS-CR-2iF" id="Be3-g9-UvP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fdj-Oh-pu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4001" y="366"/>
+        </scene>
+    </scenes>
+</document>
